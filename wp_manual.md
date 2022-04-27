@@ -129,3 +129,16 @@ Apply on: normal users or subscriber
     - < 3.4.8 - DOM Cross-Site-Scripting ([exploit](https://github.com/JawadPy/Guide/blob/main/cve/CVE-2021-24891.txt))
 - Yoast SEO 1.2.0-11.5 - Authenticated Stored XSS
 
+## Themes
+- 15Zine < 3.3.0 - Reflected Cross-Site Scripting
+    - exploit: `https://example.com/wp-admin/admin-ajax.php?action=cb_s_a&cbi=<script>alert(/XSS/);</script>`
+- 5star by Templatic - CSRF File Upload
+- Avada
+    - Fusion Builder < 3.6.2 - Unauthenticated SSRF ([exploit](https://wpscan.com/vulnerability/bf7034ab-24c4-461f-a709-3f73988b536b))
+    - < 7.4.2 - Reflected Cross-Site Scripting
+        - exploit `https://theme-fusion.com/forums/search/z--><font color=blue><h1>FAIL<img src onerror=alert('XSS')>/`
+    - < 7.4.2 - Stored Cross-Site Scripting ([exploit](https://wpscan.com/vulnerability/8a05ff50-ed05-402f-a1c9-b611dff80d76))
+    - < 6.2.3 - Missing Permission Checks leading to Arbitrary Post Creation, Edition, Deletion and Stored XSS ([exploit](https://wpscan.com/vulnerability/ed51f0b3-1e8a-438b-9236-779a9b1cdb9f))
+    - <= 5.1.4 - Stored Cross-Site Scripting (XSS) & CSRF
+
+
