@@ -9,6 +9,12 @@ document.querySelector('meta[name="generator"]')
 /license.txt
 ```
 
+## WP Theme Version
+to check theme and theme version.
+```txt
+/wp-content/themes/<theme>/readme.txt
+```
+
 ## WP Register & Login 
 #### Register
 ```txt
