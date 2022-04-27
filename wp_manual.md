@@ -2,7 +2,7 @@
 #### With JS
 
 ```js
-document.querySelector('meta[name="generator"])
+document.querySelector('meta[name="generator"]')
 ```
 #### With Direct Path
 ```txt
