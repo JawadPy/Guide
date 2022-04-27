@@ -1,6 +1,8 @@
-## WP Version
+## Versions ♻️
+
 <details>
     
+### 1. WP Version
 #### With JS
 
 
@@ -11,11 +13,8 @@ document.querySelector('meta[name="generator"]')
 ```txt
 /license.txt
 ```
-</details>
 
-
-## WP Theme Version
-<details>
+### 2. Theme Version
     
 to check theme and theme version.
 ```txt
@@ -25,7 +24,7 @@ to check theme and theme version.
 ```
 </details>
     
-## WP Register & Login 
+## WP Register & Login 👨🏻‍💻
 <details>
     
 #### Register
@@ -44,7 +43,7 @@ to check theme and theme version.
 </details>
     
 
-## Important Paths
+## Important Paths 🌏
 <details>
     
 #### Get themes & plugins
@@ -62,7 +61,7 @@ wp-content/uploads/
 ```
 </details>
     
-## Important Files
+## Important Files 
 <details>
     
 #### wp-config.php
@@ -78,7 +77,7 @@ contains:
 </details>
     
 
-## WP Usernames
+## WP Usernames 
 <details>
     
 ```txt
@@ -88,7 +87,7 @@ contains:
 ```
 </details>
     
-## WP Vulnerabilities lookup
+## WP Vulnerabilities lookup 
 <details>
     
 ```py
@@ -119,7 +118,7 @@ if __name__ == '__main__':
 
 </details>
     
-## WP DoS 
+## WP DoS 📵
 <details>
     
 #### xmlrpc.php
@@ -163,7 +162,7 @@ Apply on: normal users or subscriber
 
 </details>
 
-## Core
+## Core 
 <details>
     
 - WordPress < 5.8.3 - SQL Injection via WP_Query
