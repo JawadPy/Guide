@@ -10,7 +10,7 @@
 
 ### Tools
 - SQLMap ([Gudie](https://www.comparitech.com/net-admin/sqlmap-cheat-sheet/))
-- SQLNinja
+- jsql-injection (GUI)
 
 ### Bring me to the light!
 - https://www.acunetix.com/websitesecurity/sql-injection2/
