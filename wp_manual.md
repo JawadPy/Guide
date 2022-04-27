@@ -1,5 +1,8 @@
-## WP Version 
+## WP Version
+<details>
+    
 #### With JS
+
 
 ```js
 document.querySelector('meta[name="generator"]')
@@ -8,16 +11,23 @@ document.querySelector('meta[name="generator"]')
 ```txt
 /license.txt
 ```
+</details>
+
 
 ## WP Theme Version
+<details>
+    
 to check theme and theme version.
 ```txt
 /wp-content/themes/<theme>/readme.txt
 /wp-content/themes/<theme>/style.css?ver=5.9.3
 /wp-content/themes/<theme>
 ```
-
+</details>
+    
 ## WP Register & Login 
+<details>
+    
 #### Register
 ```txt
 /wp-activate.php
@@ -31,10 +41,12 @@ to check theme and theme version.
 /login.php
 /wp-login.php
 ```
-
+</details>
+    
 
 ## Important Paths
-
+<details>
+    
 #### Get themes & plugins
 ```txt
 /wp-content/<something>
@@ -48,8 +60,11 @@ wp-content/uploads/
 ```txt
 /wp-includes/
 ```
-
+</details>
+    
 ## Important Files
+<details>
+    
 #### wp-config.php
 contains:
 - Database host
@@ -60,16 +75,22 @@ contains:
 
 #### /wp-admin/admin-ajax.php
 
-
+</details>
+    
 
 ## WP Usernames
+<details>
+    
 ```txt
 /wp-json/wp/v2/users/1
 /?author=1
 /wp-json/wp/v2/users
 ```
-
+</details>
+    
 ## WP Vulnerabilities lookup
+<details>
+    
 ```py
 #By JawadPy
 import requests
@@ -96,7 +117,11 @@ if __name__ == '__main__':
 [cvedetails](https://www.cvedetails.com/vulnerability-list.php?vendor_id=2337&product_id=4096&version_id=0&page=1&hasexp=0&opdos=0&opec=0&opov=0&opcsrf=0&opgpriv=0&opsqli=0&opxss=0&opdirt=0&opmemc=0&ophttprs=0&opbyp=0&opfileinc=0&opginf=0&cvssscoremin=0&cvssscoremax=0&year=0&cweid=0&order=1&trc=343&sha=f7e9f236634d1e8f8f1588d8b60868d41a0af790)
 [acunetix](https://www.acunetix.com/vulnerabilities/web/)
 
+</details>
+    
 ## WP DoS 
+<details>
+    
 #### xmlrpc.php
 Path: `/xmlrpc.php` --> `Respond: 200`
 
@@ -126,30 +151,44 @@ Bruteforce:
 </params>
 </methodCall>
 ```
+</details>
 
 ## WP Unauthorised AJAX Calls via Freemius
-
+<details>
+    
  ```txt
 /wp-admin/admin-ajax.php?action=fs_get_debug_log
  ```
 Apply on: normal users or subscriber
 
+</details>
+
 ## Core
+<details>
+    
 - WordPress < 5.8.3 - SQL Injection via WP_Query
 - WordPress (4.1-5.8.2) - Blind SQL Injection via WP_Meta_Query
 - WordPress < 5.8.3 - Author+ Stored XSS via Post Slugs
 - WordPress < 5.8 - Plugin Confusion ([exploit](https://vavkamil.cz/2021/11/25/wordpress-plugin-confusion-update-can-get-you-pwned/))
 - WordPress < 5.8.3 - Super Admin Object Injection in Multisites
 - WordPress < 5.8.2 - Expired DST Root CA X3 Certificate
-
+</details>
+    
 ## Plugins
+<details>
+    
 - Chaty Free < 2.8.3 & Pro < 2.8.2 - Reflected Cross-Site Scripting ([exploit](https://wpscan.com/vulnerability/b5035987-6227-4fc6-bc45-1e8016e5c4c0))
 - Elementor
     - < 3.1.2 - Authenticated Stored (XSS) in Column Element, Heading, Divider, Accordion, Icon Box and Image Box Widget ([exploit](https://wpscan.com/vulnerability/9647f516-b130-4cc8-85fb-2e69b034ced0))
     - < 3.4.8 - DOM Cross-Site-Scripting ([exploit](https://github.com/JawadPy/Guide/blob/main/cve/CVE-2021-24891.txt))
 - Yoast SEO 1.2.0-11.5 - Authenticated Stored XSS
 - Business Directory Plugin <= 5.11.1 - Authenticated Stored XSS (CVE-2021-24250)
+
+</details>
+    
 ## Themes
+<details>
+    
 - 15Zine < 3.3.0 - Reflected Cross-Site Scripting
     - exploit: `https://example.com/wp-admin/admin-ajax.php?action=cb_s_a&cbi=<script>alert(/XSS/);</script>`
 - 5star by Templatic - CSRF File Upload
@@ -167,3 +206,4 @@ Apply on: normal users or subscriber
     - exploit: `https://example.com/wp-admin/admin-ajax.php?action=quality_customizer_notify_dismiss_action&id=%3Cscript%3Ealert(/XSS/)%3C/script%3E`
     - `https://example.com/wp-admin/admin-ajax.php?action=ti_customizer_notify_dismiss_recommended_plugins&id=%3Cscript%3Ealert(/XSS/)%3C/script%3E`
 - Business Directory <= 1.2.0 - Unauthenticated Reflected Cross-Site Scripting (XSS)
+</details>
