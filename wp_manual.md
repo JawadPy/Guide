@@ -114,6 +114,18 @@ Payload:
  ```
 Apply on: normal users or subscriber
 
+## Core
+- WordPress < 5.8.3 - SQL Injection via WP_Query
+- WordPress (4.1-5.8.2) - Blind SQL Injection via WP_Meta_Query
+- WordPress < 5.8.3 - Author+ Stored XSS via Post Slugs
+- WordPress < 5.8 - Plugin Confusion ([exploit](https://vavkamil.cz/2021/11/25/wordpress-plugin-confusion-update-can-get-you-pwned/))
+- WordPress < 5.8.3 - Super Admin Object Injection in Multisites
+- WordPress < 5.8.2 - Expired DST Root CA X3 Certificate
 
-
+## Plugins
+- Chaty Free < 2.8.3 & Pro < 2.8.2 - Reflected Cross-Site Scripting ([exploit](https://wpscan.com/vulnerability/b5035987-6227-4fc6-bc45-1e8016e5c4c0))
+- Elementor
+    - < 3.1.2 - Authenticated Stored (XSS) in Column Element, Heading, Divider, Accordion, Icon Box and Image Box Widget ([exploit](https://wpscan.com/vulnerability/9647f516-b130-4cc8-85fb-2e69b034ced0))
+    - < 3.4.8 - DOM Cross-Site-Scripting ([exploit](https://github.com/JawadPy/Guide/blob/main/cve/CVE-2021-24891.txt))
+- Yoast SEO 1.2.0-11.5 - Authenticated Stored XSS
 
