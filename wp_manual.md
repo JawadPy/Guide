@@ -206,4 +206,58 @@ Apply on: normal users or subscriber
     - exploit: `https://example.com/wp-admin/admin-ajax.php?action=quality_customizer_notify_dismiss_action&id=%3Cscript%3Ealert(/XSS/)%3C/script%3E`
     - `https://example.com/wp-admin/admin-ajax.php?action=ti_customizer_notify_dismiss_recommended_plugins&id=%3Cscript%3Ealert(/XSS/)%3C/script%3E`
 - Business Directory <= 1.2.0 - Unauthenticated Reflected Cross-Site Scripting (XSS)
+- bello < 1.6.0 - Unauthenticated Blind SQL Injection ([exploit](https://github.com/JawadPy/Guide/blob/main/cve/CVE-2021-24321.txt))
+
+    
+    
+    
+    
+### Unfixed Themes
+<details>
+    <summary>Reflected Cross-Site Scripting via Customizer Notify</summary>
+
+    - jewelry-store
+    - eventpress
+    - startkit
+    - appointment
+    - astore
+    - auto-car
+    - blain
+    - businesswp
+    - cactus
+    - colorway
+    - consultera
+    - elitepress
+    - envo-business
+    - fifteen
+    - hasten-lite
+    - ih-business-pro
+    - lawyerpress-lite
+    - mediciti-lite
+    - ngo-charity-lite
+    - robolist-lite
+    - shopbiz-lite
+    - short
+    - spawp
+    - wp-real-estate
+
 </details>
+    
+<details>
+    <summary>Unauthorised AJAX Calls via Freemius</summary>
+
+    - brand
+    - cuisine-palace
+    - speculor
+    - bani
+    - purus
+    - shuban
+    - blain
+    - learnmore
+    - aquarella-lite
+    - wp-sierra
+    
+</details>
+
+</details>
+
