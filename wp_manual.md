@@ -12,6 +12,7 @@ document.querySelector('meta[name="generator"]')
 #### With Direct Path
 ```txt
 /license.txt
+/wp-links-opml.php
 ```
 
 ### 2. Theme Version
